@@ -119,6 +119,10 @@
         </div>
         <div id="tmc1" class="login_box">
             <div class="login_top">
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
                 <div class="login-title">密码登录</div>
                 <div class="login-line">|</div>
                 <div class="login-title">短信登录</div>
@@ -274,9 +278,29 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./js/ajax.js"></script>
     <script src="./js/cookie.js"></script>
-    <script src="./js/denglu.js"></script>
+    <script src="./js/login.js"></script>
     <script src="./js/cl.js"></script>
+<script>
+    
+var topArr = document.querySelectorAll("div .login-title");
+var pass = document.;
+var prevIndex = 0;
+  console.log(topArr)
+for (var i = 0, len = topArr.length; i < len; i++){
+    topArr[i].index = i
+  
+topArr[i].onclick = function(){
+    topArr[prevIndex].className = 'login-title'
+    topArr[this.index].className = 'login-title active'
+    prevIndex = this.index
+    if (this.index = 1) {
+        
+    }
+}
 
+}
+
+</script>
 
 </body>
 

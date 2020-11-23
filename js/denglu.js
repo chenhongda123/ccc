@@ -1,10 +1,11 @@
-//  1：登录
+
 
 
 var btn = document.getElementById('sbmt02');
 var nameInp = document.getElementById('input3');
 var pwInp = document.getElementById('input4');
 var p = document.querySelector('#wrong');
+
 btn.onclick = function() {
     //获取用户名和密码
     var uname = nameInp.value; //用户名
@@ -22,3 +23,7 @@ btn.onclick = function() {
         }
     }, `username=${uname}&password=${pw}`);
 }
+
+
+
+
