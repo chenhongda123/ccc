@@ -13,7 +13,7 @@ include './base.php';
 $uname = $_POST['username'];//获取前端传递的用户名
 $upass = $_POST['password'];//获取前端传递的密码
 
-$conn = mysqli_connect('localhost','root','root','user');
+$conn = mysqli_connect('localhost','root','123456','new2010');
 $sql = "SELECT * FROM `info` WHERE `username`='$uname' AND `password`='$upass'";
 $res = mysqli_query($conn,$sql);
 $row = mysqli_fetch_assoc($res);

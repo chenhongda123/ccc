@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/denglu.css">
+    <!-- <link rel="stylesheet" href="./css/denglu.css"> -->
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
@@ -114,7 +115,36 @@
     <!-- banner -->
     <div id="banner">
         <div class="banner-con">
-            <img src="./images/5.jpg" alt="">
+            <img src="./images/login.png" alt="">
+        </div>
+        <div id="tmc1" class="login_box">
+            <div class="login_top">
+                <div class="login-title">密码登录</div>
+                <div class="login-line">|</div>
+                <div class="login-title">短信登录</div>
+            </div>
+            <div class="input-row" id="user">
+                <div class="input-box">
+                    <input class="input-txt" type="text" name="username" autofocus placeholder="请输入手机号" id="input3">
+                </div>
+            </div>
+            <div class="input-row" id="upass">
+                <div class="input-box">
+                    <input class="input-txt" type="text" name="password" autofocus placeholder="请输入密码" id="input4">            </div>
+            </div>
+      
+            <div class="input-row row-auto">
+            <label for="" class="checkout">
+                <input type="checkbox" id="autoLogin">
+                <span class="auto"> 自动登录</span>
+            </label>
+            </div>
+            <div class="input-row row-btn">
+                <a href="javascript:void(0)" pbtag="登录" class="login-btn disabled" id="sbmt02">登 录</a>
+            </div>
+            <div class="input-row row-links"></div>
+            <div class="input-row row-center"></div>
+            <em id="wrong"></em>
         </div>
     </div>
     <!-- footer -->
@@ -213,7 +243,8 @@
         </div>
     </div>
     <!-- 登录 -->
-    <div id="tmc1" class="tmc_box">
+    
+    <!-- <div id="tmc1" class="tmc_box">
         <div id="denglu" class="cd_box">
             <h4>登录</h4>
             <span id="xx">X</span>
@@ -230,7 +261,7 @@
             </form>
             <em id="wrong"></em>
         </div>
-    </div>
+    </div> -->
     <script src="./lib/jquery.min.js"></script>
     <script src="./js/ajax.js"></script>
     <script src="./js/cookie.js"></script>

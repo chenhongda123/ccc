@@ -1,13 +1,4 @@
-//  1：登录
-var denglu = document.getElementById('denglu'); //登录
-var tmc1 = document.getElementById('tmc1'); //透明层
-var xx = document.getElementById('xx');
-denglu.onclick = function() {
-    tmc1.style.display = 'block';
-}
-xx.onclick = function() {
-    tmc1.style.display = "none";
-}
+
 
 
 var btn = document.getElementById('sbmt02');

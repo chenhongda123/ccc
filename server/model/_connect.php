@@ -2,9 +2,9 @@
 
 header('content-type:text/html;charset=utf8');
 
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "123456";
 $dbname = "shop";
 
 //创建连接

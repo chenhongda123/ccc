@@ -10,8 +10,8 @@ include './base.php';
 // 第二步
 $uname = $_POST['username'];//获取前端传递的用户名
 $upass = $_POST['password'];//获取前端传递的密码
-$conn = mysqli_connect('localhost','root','root','user');
-$sql = "INSERT INTO `info` VALUES (null,'$uname','$upass')";
+$conn = mysqli_connect('localhost','root','123456','new2010');
+$sql = "INSERT INTO `info`(`username`,`password`) VALUES ('$uname','$upass')";
 $res = mysqli_query($conn,$sql);
 mysqli_close($conn);
 
