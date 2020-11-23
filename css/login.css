@@ -73,21 +73,6 @@
     margin-bottom: 10px;
 }
 
-.row-links{ 
-   color: #bfbfbf;
-   height: 20px;
-   margin-bottom: 35px;
-   font-size: 14px;
-}
-
-.row-center{
-   text-align: center;
-}
-
-.row-btn {
-    margin-bottom: 10px;
-}
-
 .login-btn {
     display: block;
     width: 100%;
@@ -104,4 +89,27 @@
     color: rgba(255,255,255,0.5);
     background: #ea413c !important;
 }
+
+.row-links{ 
+   color: #bfbfbf;
+   height: 20px;
+   margin-bottom: 35px;
+   font-size: 14px;
+}
+
+.row-links a {
+    color: #595959;
+}
+
+.row-links a:nth-child(2){
+    float: right;
+    
+}
+
+.row-center{
+   text-align: center;
+}
+.row-center a{
+    color: #595959;
+ }
 
