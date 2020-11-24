@@ -1,13 +1,13 @@
 // 3：注册
-var zhuce = document.getElementById('zhuce'); //注册
-var tmc = document.getElementById('tmc'); //透明层
-var xx = document.getElementById('xx'); //关闭按钮
-zhuce.onclick = function() {
-    tmc.style.display = 'block';
-}
-xx.onclick = function() {
-    tmc.style.display = "none";
-}
+// var zhuce = document.getElementById('zhuce'); //注册
+// var tmc = document.getElementById('tmc'); //透明层
+// var xx = document.getElementById('xx'); //关闭按钮
+// zhuce.onclick = function() {
+//     tmc.style.display = 'block';
+// }
+// xx.onclick = function() {
+//     tmc.style.display = "none";
+// }
 
 
 
