@@ -2,12 +2,35 @@
 <html lang="en">
 
 <head>
+    <style>
+        .login_box .captcha-box {
+    float: left;
+    width: 178px;
+    border-radius: 2px 0 0 2px;
+}
+
+
+.row-captcha .send-captcha{
+    color: #bfbfbf;
+    float: left;
+    width: 98px;
+    height: 38px;
+    border: 1px solid #d9d9d9;
+    border-left-width: 0;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    color: #595959;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <!-- <link rel="stylesheet" href="./css/denglu.css"> -->
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
@@ -303,11 +326,11 @@ topArr[i].onclick = function(){
     // pwInp.placeholder = '请输入短信验证码';
     upass.className='input-row row-captcha';
     upass.removeChild(inptbox);
-    upass.innerHTML =" <input class='input-txt captcha-box' type='text' name='password' autofocus placeholder='请输入短信验证码' id='input4'>  <a href='javascript:void(0)' id='sendCode' class='send-captcha disabled'>获取验证码</a> "
+    upass.innerHTML =` <input class='input-txt captcha-box' type='text' name='password' autofocus placeholder='请输入短信验证码' id='input4'>  <a href='javascript:void(0)' id='sendCode' class='send-captcha disabled'>获取验证码</a> `
     }else{
      upass.className='input-row row-pwd';
      upass.removeChild(document.getElementById("input4"));
-     upass.innerHTML = " <div class='input-box'  id='pwd'><input class='input-txt' type='text' name='password' autofocus placeholder='请输入密码' id='input4'></div>"
+     upass.innerHTML = ` <div class='input-box'  id='pwd'><input class='input-txt' type='text' name='password' autofocus placeholder='请输入密码' id='input4'></div>`
     }
 }
 

@@ -67,7 +67,7 @@
 }
 
 
-.row-captcha>a{
+.row-captcha .send-captcha{
     color: #bfbfbf;
     float: left;
     width: 98px;
