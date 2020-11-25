@@ -116,29 +116,33 @@
         <div class="banner-con">
             <img src="./images/login.png" alt="">
         </div>
-        <div id="tmc2" class="register_box">
+        <div id="tmc2" class="register_box" >
                 <h3 class="h5-hide">注 册</h3>
+             <form action="./server/register.php" method="POST">  
             <div class="input-row" id="user">
                 <div class="input-box">
                     <input class="input-txt" type="text" name="username" autofocus placeholder="请输入手机号" id="input1">
-                </div>
-            </div>
-            <div class="input-row row-captcha">
-                <div class="input-box cl">
-                    <input id="smscode" class="input-txt captcha-box" type="text" placeholder="请输入短信验证码" autocomplete="off">
-                    <a href="javascript:void(0)" id="sendCode" class="send-captcha disabled">获取验证码</a>
                 </div>
             </div>
             <div class="input-row" id="upass">
                 <div class="input-box">
                     <input class="input-txt" type="text" name="password" autofocus placeholder="设置6-16位密码（区分大小写）" id="input2">            </div>
             </div>
+          
+            <div class="input-row row-captcha">
+                <div class="input-box cl">
+                    <input id="smscode" class="input-txt captcha-box" type="text" placeholder="请输入短信验证码" autocomplete="off">
+                    <a href="javascript:void(0)" id="sendCode" class="send-captcha disabled">获取验证码</a>
+                </div>
+            </div>
+            
       
             <div id="regErrTip" class="input-row row-err-tip"></div>
 
             <div class="input-row row-btn">
-                <a href="javascript:void(0)" pbtag="快速注册" class="login-btn disabled" id="sbmt01">快速注册</a>
+                <input type="submit"  pbtag="快速注册" class="login-btn disabled" id="sbmt01" value="快速注册"></input>
             </div>
+          </form> 
             <div class="input-row">
                 <label class="check-label">
                     <input id="agreement" type="checkbox">
@@ -264,7 +268,27 @@
     <script src="./js/cookie.js"></script>
     <script src="./js/register.js"></script>
     <script src="./js/cl.js"></script>
+     <script>
+    var btn = document.getElementById('sbmt01');
+var nameInp = document.getElementById('input1');
+var pwInp = document.getElementById('input2');
 
+//   btn.onclick = function(){
+//     var uname = nameInp.value;
+//     var pw = pwInp.value;
+//     postSend('./server/register.php', function(data) {
+//       // 3 获取login.php返回的结果,来进行下一步
+//       console.log(data);
+//     //   data = JSON.parse(data); //值没转换，是字符串
+//       // 4： 如果登录成功,跳转购物车页面
+//       if (data.code == 1) {
+//           location.href = "./denglu.html";
+//       } else {
+//           p.innerHTML = data.msg
+//       }
+//   }, `username=${uname}&password=${pw}`);
+// }
+     </script>
 
 </body>
 

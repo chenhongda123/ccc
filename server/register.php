@@ -14,11 +14,12 @@ $conn = mysqli_connect('localhost','root','123456','new2010');
 $sql = "INSERT INTO `info`(`username`,`password`) VALUES ('$uname','$upass')";
 $res = mysqli_query($conn,$sql);
 mysqli_close($conn);
-
-if($res){
+  
+if ($res){
     header('location:../denglu.html');
 }else{
     echo "服务器错误";
+   
 }
 
 ?>
