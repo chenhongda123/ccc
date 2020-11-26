@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.logo_gw {
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    display: block;
+    margin-right: 10px;
+    margin-top: 30px;
+    text-shadow: -5px -2px 0px #cfcfcf;
+    float: right;
+}
+
+.nav-con .logo_f2 {
+    font-size: 26px;
+    /* color: rgb(240, 46, 46); */
+    font-weight: bold;
+}
+
+#box,
+.no {
+    display: none;
+    /* min-height: 200px; */
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#box {
+    margin-bottom: 50px;
+}
+
+.no {
+    font-size: 20px;
+    font-weight: bold;
+    background: #cfcfcf;
+    height: 100px;
+    line-height: 100px;
+}
+
+.tu_img {
+    width: 150px;
+    height: 150px;
+}
+
+.box_header {
+    height: 60px;
+    background: #ebebeb;
+    border: 1px solid rgb(177, 174, 174);
+    margin-bottom: 20px;
+}
+
+.box_header li {
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.one {
+    width: 350px;
+    /* background: powderblue; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.two,
+.three {
+    width: 200px;
+}
+
+#tbody {
+    min-height: 200px;
+    /* background: pink; */
+    border-top: 4px solid #797979;
+    border-bottom: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+}
+
+#tbody ol {
+    height: 186px;
+    margin: 20px 10px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+#tbody ol li {
+    float: left;
+    font-size: 18px;
+}
+
+.yi,
+.er,
+.san {
+    line-height: 160px;
+}
+
+.san {
+    color: red;
+}
+
+#tbody ol .del {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    background: rgb(240, 239, 239);
+    line-height: 40px;
+    margin: 62px 0 0 98px;
+    cursor: pointer;
+}
+
+#tbody ol .si {
+    width: 100px;
+    height: 30px;
+    background: white;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #b3b1b1;
+    margin: 62px 0 0 38px;
+}
+
+#tbody ol .si span {
+    float: right;
+}
+
+#tbody ol .si .add {
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    background: #ebebeb;
+    border-left: 1px solid #b3b1b1;
+    cursor: pointer;
+}
+
+#tbody ol .si .num {
+    display: inline-block;
+    width: 46px;
+    height: 30px;
+}
+
+#tbody ol .si .jian {
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    background: #ebebeb;
+    border-right: 1px solid #b3b1b1;
+    cursor: pointer;
+}
